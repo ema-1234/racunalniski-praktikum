@@ -26,6 +26,9 @@ a:link { color:#cc0000; }
 a:visited { color:#660066; }
 a:hover { color:#660066; }
 a:active { color:#990000; outline:none; }
+a::before {
+  content: "🔗";
+}
 
 code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -44,7 +47,6 @@ h2 {margin-top: 2em;
     background-color: rgb(51, 0, 102, 0.1); 
 }
 .slika {
-  border: solid red;
   font-size: 0.9em;
   width: 40%;
   text-align: left;
@@ -54,4 +56,9 @@ h2 {margin-top: 2em;
 .slika img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
+}
+.slika p:last-child {
+    background-color: #cc0000;
+    font-size: 0.8em;
 }
